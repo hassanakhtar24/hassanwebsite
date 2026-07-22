@@ -49,10 +49,9 @@ function Home() {
           <AboutUs
             id="about"
             number="01."
-            topTitle="Who We Are"
+            topTitle="About Me"
             title="The Brand"
-            quote="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-            missionDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            quote="I am a graphic designer with 10+ years of experience creating high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. My work ranges from e-commerce packaging to editorial retouching for luxury brands, delivering world-class execution for global startups, agencies, and enterprise clients. I work fast, I work clean, I get results."
             visionDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
             imagesLeft={[
               "/assets/images/wall/1.webp",
