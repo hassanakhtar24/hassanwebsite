@@ -37,8 +37,8 @@ function Home() {
           slides={[
             {
               media: "/assets/images/background/hero-bg-1.webp",
-              topText: "Image Caption #1",
-              title: "Simplicity is complex.",
+              topText: "Hassan Baloch",
+              title: "Freelance Graphic Designer",
               buttonText: "Watch Video",
               buttonLink: "https://www.youtube.com/watch?v=y3RQybKHsj4",
             },
