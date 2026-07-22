@@ -13,7 +13,7 @@ import Map from "@/components/Special/Map/Map";
 import Team from "@/components/Layout/Team/Team";
 import Steps from "@/components/Layout/Steps/Steps";
 import Counter from "@/components/UI/Counter/Counter";
-
+import heroBg from "@/assets/images/background/hero-bg-1.webp";
 import Quote from "@/components/UI/Quote/Quote";
 import News from "@/components/Layout/News/News";
 import Contact from "@/components/Layout/Contact/Contact";
@@ -36,7 +36,7 @@ function Home() {
           showReservation={true}
           slides={[
             {
-              media: "/assets/images/background/hero-bg-1.webp",
+              media: heroBg,
               topText: "Hassan Baloch",
               title: "Freelance Graphic Designer",
               buttonText: "Watch Video",
