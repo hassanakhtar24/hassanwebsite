@@ -39,8 +39,8 @@ function Home() {
               media: heroBg,
               topText: "Hassan Baloch",
               title: "Freelance Graphic Designer",
-              buttonText: "Watch Video",
-              buttonLink: "https://www.youtube.com/watch?v=eCHaiEjCDFM",
+              buttonText: "Let's Begin",
+              buttonLink: "#about",
             },
           ]}
         />
@@ -70,7 +70,7 @@ function Home() {
               "/assets/images/wall/12.webp",
             ]}
           />
-          <Counter title="Being around for" number={10+} subTitle="Years" />
+          <Counter title="Designing for the industry for more than" number={12} subTitle="Years" />
         </Section>
 
         <Section background="var(--bg-alt)">
