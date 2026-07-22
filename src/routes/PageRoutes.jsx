@@ -37,7 +37,7 @@ function PageRoutes() {
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/">
-              <Route index element={<Landing />} />
+              <Route index element={<DarkSingleHome />} />
 
               <Route path="light-single-wave" element={<LightSingleWaveHome />} />
               <Route path="light-slider-wave" element={<LightSliderWaveHome />} />
