@@ -20,8 +20,8 @@ import Contact from "@/components/Layout/Contact/Contact";
 import SplitShowcase from "@/components/Layout/SplitShowcase/SplitShowcase";
 
 const meta = {
-  title: "Hassan Baloch - Freelance Graphic Designer",
-  description: "From Graphic Design to Video Editing - Available 24/7, Globally.",
+  title: "Hassan Baloch - Freelance Graphic & Web Designer",
+  description: "From Graphic Design to Web & UI/UX - Available Globally.",
 };
 
 function Home() {
@@ -33,14 +33,14 @@ function Home() {
 
         <Hero
           id="home"
-          showReservation={true}
+          showReservation={false}
           slides={[
             {
               media: heroBg,
-              topText: "Hassan Baloch",
-              title: "Freelance Graphic Designer",
-              buttonText: "Let's Begin",
-              buttonLink: "#about",
+              topText: "EXPERT GRAPHIC DESIGNER",
+              title: "Freelance Graphic & Web Designer",
+              buttonText: "VIEW WORKS",
+              buttonLink: "#works",
             },
           ]}
         />
@@ -49,10 +49,10 @@ function Home() {
           <AboutUs
             id="about"
             number="01."
-            topTitle="About Me"
-            title="Every great design begin with an even better story"
-            quote="I am a graphic designer with 10+ years of experience creating high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. My work ranges from e-commerce packaging to editorial retouching for luxury brands, delivering world-class execution for global startups, agencies, and enterprise clients. I work fast, I work clean, I get results."
-            visionDescription="I am a graphic designer with 10+ years of experience creating high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. My work ranges from e-commerce packaging to editorial retouching for luxury brands, delivering world-class execution for global startups, agencies, and enterprise clients. I work fast, I work clean, I get results."
+            topTitle="INTRODUCTION"
+            title="The Foundry"
+            quote="I am a graphic designer with a decade of experience crafting high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. Whether it's e-commerce packaging, web design, or strategic digital assets for global startups and agencies, the goal is simple: sharp design with zero fluff."
+            visionDescription="I am a graphic designer with a decade of experience crafting high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. Whether it's e-commerce packaging, web design, or strategic digital assets for global startups and agencies, the goal is simple: sharp design with zero fluff."
             imagesLeft={[
               "/assets/images/wall/1.webp",
               "/assets/images/wall/2.webp",
@@ -70,7 +70,11 @@ function Home() {
               "/assets/images/wall/12.webp",
             ]}
           />
-          <Counter title="Designing for the industry for more than" number={12} subTitle="Years" />
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2rem", padding: "2rem 4rem" }}>
+            <Counter title="Years of Experience" number={10} subTitle="10+" />
+            <Counter title="Deliverables Completed" number={1500} subTitle="1500+" />
+            <Counter title="Brands & Campaigns Supported" number={250} subTitle="250+" />
+          </div>
         </Section>
 
         <Section background="var(--bg-alt)">
@@ -85,21 +89,23 @@ function Home() {
             waves={false}
             slides={["/assets/images/know-how/1.webp", "/assets/images/know-how/2.webp"]}
             features={[
-              { name: "Web Design", number: 100 },
-              { name: "UI/UX Design", number: 90 },
-              { name: "Brand Indentity", number: 80 },
-              { name: "Logo Design", number: 70 },
+              { name: "Adobe Illustrator", number: 96 },
+              { name: "Adobe Photoshop", number: 92 },
+              { name: "Adobe Premiere", number: 89 },
+              { name: "Adobe After Effects", number: 86 },
+              { name: "Figma", number: 81 },
+              { name: "Creativity", number: 100 },
             ]}
           />
         </Section>
 
         <Section id="services" background="var(--bg-alt)">
-          <Info number="03." topTitle="What we do" title="The Services" />
+          <Info number="03." topTitle="WHAT I DO" title="The Services" />
           <Steps
             steps={[
-              { title: "Web design", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-              { title: "UX/UI design", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-              { title: "Brand identity", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+              { title: "Graphic Design", description: "Transforming concepts into visually compelling designs that communicate your brand's core essence." },
+              { title: "Packaging Design", description: "Structural files and print-ready dieelines engineered for shelf impact and e-commerce appeal." },
+              { title: "Website Design", description: "Designing user-friendly and visually appealing web interfaces that elevate your brand's digital presence." },
             ]}
           />
         </Section>
@@ -119,7 +125,8 @@ function Home() {
         </Section>
 
         <Section id="works" background="var(--bg-alt)">
-          <Info number="04." topTitle="What's done" title="The Works" />
+          <Info number="04." topTitle="PORTFOLIO" title="The Works" />
+          <Quote text="Selected projects spanning brand identities, packaging design, and digital experiences. Check out the full portfolio at www.hassanbaloch.com" />
         </Section>
 
         <ImageGallery
@@ -139,19 +146,16 @@ function Home() {
         <Section fluid={true} id="office">
           <Testimonials
             media="/assets/images/background/parallax-blank.webp"
-            buttonLink="https://www.youtube.com/watch?v=y3RQybKHsj4"
             testimonials={[
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+              "\"Hassan is an outstanding designer who quickly grasps project requirements and consistently delivers good work. His understanding and efficiency make him a valuable asset for any requirements.\" — Bhargavi Bhatt (Asst. Product Manager)",
+              "\"Communicating with Hassan was a breeze. He's attentive to my ideas and offered valuable input without overpowering my vision. The final product exceeded my expectations.\" — Muhammad Faheem (CEO)",
             ]}
           />
         </Section>
 
         <Section background="var(--bg-main)">
-          <Info number="05." topTitle="Step inside" title="The Office" />
-          <Quote text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." />
+          <Info number="05." topTitle="RESUME" title="Experience" />
+          <Quote text="Freelance & Corporate Design Career" />
           <Team
             slides={[
               "/assets/images/inside/1.webp",
@@ -159,6 +163,13 @@ function Home() {
               "/assets/images/inside/3.webp",
               "/assets/images/inside/4.webp",
               "/assets/images/inside/5.webp",
+            ]}
+          />
+          <Steps
+            steps={[
+              { title: "Freelance Graphic Designer (2024 – Present)", description: "Packaging, flyers, drop cards, logos, and e-commerce imagery for international clients. Delivered brand identity systems and print-ready packaging dieelines with seamless remote collaboration." },
+              { title: "Multimedia Manager – Voxtron Group (2023 – 2024)", description: "Led the design team and managed end-to-end visual production across digital channels. Created logo animations, motion graphics, and social media content that elevated brand visibility." },
+              { title: "Creative Head – Mehrdar Art & Production (2014 – 2023)", description: "Directed creative campaigns and visual strategy for commercial projects, managing brand identity, event visuals, and social storytelling." },
             ]}
           />
         </Section>
@@ -173,7 +184,7 @@ function Home() {
         </Section>
 
         <Section id="contact" fluid={true}>
-          <Contact number="07." topTitle="Let's Talk" title="The Contact" image="/assets/images/background/parallax-contact.webp" isDark={true} />
+          <Contact number="07." topTitle="GET IN TOUCH" title="Let's Build Something Exceptional" image="/assets/images/background/parallax-contact.webp" isDark={true} />
         </Section>
 
         <Section fluid={true} background="var(--bg-main)">
