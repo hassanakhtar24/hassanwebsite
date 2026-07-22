@@ -10,6 +10,14 @@
     box-shadow 0.6s ease;
 }
 
+.navbar-brand, 
+.logo {
+  img {
+    max-height: 40px; // Adjust this between 30px to 45px as needed
+    width: auto;
+  }
+}
+
 .navbarScrolled {
   background-color: var(--bg-main);
   box-shadow: 0 0 15px #11111115;
