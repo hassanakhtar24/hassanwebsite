@@ -7,7 +7,7 @@ import { IoMenuOutline } from "react-icons/io5";
 
 import { scrollToId } from "@/utils/scrollToId.js";
 import { useScrollEffect } from "@/utils/useScrollEffect";
-import logoImg from "../../../assets/images/logo/logo-01.png";
+import { logo } from "@/data/logo";
 import { navData } from "@/data/navigation";
 
 function Navigation({ className = "", id, isDark = false }) {
@@ -57,7 +57,7 @@ function Navigation({ className = "", id, isDark = false }) {
             }}
             className={styles.navbarImage}
           >
-           const logoSrc = logoImg;
+           <img alt="Logo" src={logoSrc} />
           </Navbar.Brand>
 
           {/* Hamburger button */}
