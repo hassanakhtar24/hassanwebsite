@@ -20,8 +20,8 @@ import Contact from "@/components/Layout/Contact/Contact";
 import SplitShowcase from "@/components/Layout/SplitShowcase/SplitShowcase";
 
 const meta = {
-  title: "Brandex - Modern One Page Portfolio Template",
-  description: "A high-performance, professional portfolio template designed for modern digital presence.",
+  title: "Hassan Baloch - Freelance Graphic Designer",
+  description: "From Graphic Design to Video Editing - Available 24/7, Globally.",
 };
 
 function Home() {
