@@ -1,4 +1,6 @@
+import logoImg from "../assets/images/logo/logo-01.png";
+
 export const logo = {
-  light: "/assets/images/logo/logo-01.png",
-  dark: "/assets/images/logo/logo-01.png",
+  light: logoImg,
+  dark: logoImg,
 };
