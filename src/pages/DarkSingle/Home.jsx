@@ -50,7 +50,7 @@ function Home() {
             id="about"
             number="01."
             topTitle="About Me"
-            title="The Brand"
+            title="Every great design begin with an even better story"
             quote="I am a graphic designer with 10+ years of experience creating high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. My work ranges from e-commerce packaging to editorial retouching for luxury brands, delivering world-class execution for global startups, agencies, and enterprise clients. I work fast, I work clean, I get results."
             visionDescription="I am a graphic designer with 10+ years of experience creating high-impact packaging, brand identity, and product imagery. I combine commercial thinking with cultural fluency to produce visuals that look premium and perform. My work ranges from e-commerce packaging to editorial retouching for luxury brands, delivering world-class execution for global startups, agencies, and enterprise clients. I work fast, I work clean, I get results."
             imagesLeft={[
@@ -70,7 +70,7 @@ function Home() {
               "/assets/images/wall/12.webp",
             ]}
           />
-          <Counter title="Being around for" number={76} subTitle="Years" />
+          <Counter title="Being around for" number={10+} subTitle="Years" />
         </Section>
 
         <Section background="var(--bg-alt)">
