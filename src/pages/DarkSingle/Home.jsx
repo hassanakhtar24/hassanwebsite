@@ -36,7 +36,7 @@ function Home() {
           showReservation={true}
           slides={[
             {
-              media: "/assets/images/background/hero-bg-1.jpg",
+              media: "/assets/images/background/hero-bg-1.webp",
               topText: "Hassan Baloch",
               title: "Freelance Graphic Designer",
               buttonText: "Watch Video",
