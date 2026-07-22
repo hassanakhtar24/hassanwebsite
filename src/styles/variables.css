@@ -1,0 +1,39 @@
+:root {
+  /* Typography */
+  --font-main: "Montserrat", sans-serif;
+  --font-alt: "Raleway", sans-serif;
+
+  /* Text Colors */
+  --text-main: #111111;
+  --text-alt: #5f5f5f;
+  --text-inverse: #ffffff;
+
+  /* Background Colors */
+  --bg-main: #ffffff;
+  --bg-alt: #f7f7f7;
+  --bg-inverse: #111111;
+
+  /* UI */
+  --border-main: #e5e5e5;
+  --ui-disabled: #cccccc;
+
+  /* Selection */
+  --selection-bg: #5f5f5f;
+  --selection-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  /* Text Colors */
+  --text-main: #f0f0f0;
+  --text-alt: #5f5f5f;
+  --text-inverse: #111111;
+
+  /* Background Colors */
+  --bg-main: #151515;
+  --bg-alt: #111111;
+  --bg-inverse: #f0f0f0;
+
+  /* UI */
+  --border-main: #2e2e2e;
+  --ui-disabled: #444444;
+}

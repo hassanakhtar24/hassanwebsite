@@ -1,0 +1,190 @@
+.slide {
+  overflow: hidden !important;
+}
+
+.mediaContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  overflow: hidden;
+  cursor: grab;
+  background-color: var(--text-main);
+}
+
+.mediaContainerSingle {
+  cursor: auto;
+}
+
+.heroImage,
+.heroVideo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  object-fit: cover;
+  overflow: hidden;
+  filter: brightness(35%);
+}
+
+.dots {
+  position: absolute;
+  width: calc(33% - 300px);
+  height: calc(100% - 300px);
+  background: transparent;
+  background-image: radial-gradient(rgba(119, 119, 119, 0.75) 5%, transparent 0);
+  background-size: 30px 30px;
+  top: 150px;
+  right: 150px;
+  bottom: 150px;
+  left: 150px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.reverse {
+  margin-left: 180px;
+  top: 150px;
+  right: 0;
+  bottom: 150px;
+  left: 66%;
+}
+
+.heroContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: calc(50% - 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  font-family: var(--font-main);
+
+  span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    @media (max-width: 880px) {
+      gap: 15px;
+    }
+
+    hr {
+      position: relative;
+      width: 30px;
+      height: 2px;
+      opacity: 1;
+      color: #fff;
+
+      @media (max-width: 880px) {
+        width: 15px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin: 40px 0 50px 0;
+
+    @media (min-width: 1920px) {
+      font-size: 65px;
+    }
+
+    @media (max-width: 995px) {
+      font-size: 45px;
+    }
+  }
+}
+
+.slideButtonContainer {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  right: 80px;
+  bottom: 80px;
+  width: fit-content;
+
+  @media (max-width: 880px) {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+.slideButtonLeft,
+.slideButtonRight {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 5;
+  background-color: #fff;
+  cursor: pointer;
+
+  svg {
+    color: #111 !important;
+  }
+}
+
+.playPauseButton {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 5;
+  border: 1px dashed #fff;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    color: #fff !important;
+  }
+}
+
+.paginationContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+  left: 76px !important;
+  bottom: 80px !important;
+  min-width: 20px;
+  max-width: 20px;
+  height: fit-content;
+  width: fit-content;
+
+  @media (max-width: 880px) {
+    left: 15px !important;
+    bottom: 15px !important;
+  }
+}

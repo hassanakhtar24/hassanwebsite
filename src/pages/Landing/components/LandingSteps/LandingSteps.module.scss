@@ -1,0 +1,87 @@
+.stepsSection {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.stepsContainer {
+  padding: 0 50px;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 996px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.stepBox {
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .stepNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    font-weight: 800;
+    min-width: 80px;
+    color: #e0e0e0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+
+    @media (max-width: 425px) {
+      font-size: 90px;
+      min-width: unset;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #e0e0e0;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    line-height: 2;
+    color: #b2b2b2;
+    margin: 0;
+    max-width: 275px;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: normal;
+    font-weight: 600;
+    backface-visibility: hidden;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+}

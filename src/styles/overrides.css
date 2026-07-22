@@ -1,0 +1,43 @@
+:root {
+  --yarl__color_backdrop: transparent;
+}
+
+.yarl__root {
+  backdrop-filter: brightness(0.33) !important;
+}
+
+.yarl__slide_image {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.fslightbox-container {
+  background: none !important;
+  backdrop-filter: brightness(0.33) !important;
+}
+
+.fslightboxb {
+  background: transparent !important;
+}
+
+.fslightbox-source {
+  max-width: 1024px !important;
+  max-height: 576px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  width: 6px !important;
+  height: 6px !important;
+  opacity: 1 !important;
+  margin: 6px !important;
+  transition:
+    width 0.5s ease,
+    height 0.5s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  width: 16px !important;
+  height: 16px !important;
+}

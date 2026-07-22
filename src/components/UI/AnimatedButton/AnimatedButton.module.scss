@@ -1,0 +1,58 @@
+.textButtonWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 5;
+
+  button,
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px dashed var(--btn-color, var(--text-main));
+      border-radius: 50%;
+      pointer-events: none;
+      animation: rotateBorder 5s linear infinite;
+      animation-play-state: paused;
+    }
+
+    &:hover::before {
+      animation-play-state: running;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-family: var(--font-main);
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--btn-color, var(--text-main));
+    }
+  }
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

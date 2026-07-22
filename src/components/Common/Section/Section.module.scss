@@ -1,0 +1,38 @@
+.section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-left: 40px solid var(--bg-main);
+  border-right: 40px solid var(--bg-main);
+
+  @media (max-width: 880px) {
+    border-left: unset;
+    border-right: unset;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 970px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
+
+  &.fluid {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}

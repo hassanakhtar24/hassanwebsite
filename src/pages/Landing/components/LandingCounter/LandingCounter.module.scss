@@ -1,0 +1,30 @@
+.sizeText {
+  position: relative;
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-main);
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  z-index: 5;
+}
+
+.sizeNumber {
+  position: relative;
+  font-family: var(--font-main);
+  color: var(--text-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  width: 100%;
+  margin: 50px 0;
+  line-height: 100%;
+  z-index: 5;
+}

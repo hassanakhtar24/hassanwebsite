@@ -1,0 +1,29 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    max-width: 750px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 970px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
+
+  &.fluid {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}

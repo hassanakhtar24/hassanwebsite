@@ -1,0 +1,136 @@
+.slide {
+  overflow: hidden !important;
+}
+
+.mediaContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  overflow: hidden;
+  cursor: grab;
+  background-color: #111;
+}
+
+.mediaContainerSingle {
+  cursor: auto;
+}
+
+.heroImage,
+.heroVideo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  object-fit: cover;
+  overflow: hidden;
+  filter: brightness(35%);
+}
+
+.heroContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+
+  span {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 115px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 40px 0;
+
+    @media (max-width: 768px) {
+      font-size: 65px;
+    }
+  }
+}
+
+.customButton {
+  span {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 13px !important;
+  }
+}
+
+.scrollContainer {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: red;
+  z-index: 1005;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 900px) {
+    bottom: 70px;
+  }
+}
+
+.scrollWrapper {
+  position: absolute;
+  width: 1px !important;
+  height: 100%;
+  left: -1px;
+}
+
+.scrollLine {
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: none;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    top: 0;
+    background-color: #fff;
+    animation: scroll 2s ease-in-out infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    height: 0;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  70% {
+    height: 100%;
+    transform: scaleY(0.5);
+    transform-origin: bottom;
+  }
+
+  100% {
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}

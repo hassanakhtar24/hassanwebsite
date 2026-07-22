@@ -1,0 +1,53 @@
+.counterContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(180deg, var(--bg-main) 50%, var(--bg-alt) 50%);
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: var(--bg-alt);
+  border-radius: 100%;
+  border: 20px solid var(--bg-main);
+  z-index: 5;
+}
+
+.sizeText {
+  position: relative;
+  font-family: var(--font-main);
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-main);
+  width: 100%;
+  margin: 0;
+  letter-spacing: 0.65em;
+  z-index: 5;
+}
+
+.sizeNumber {
+  position: relative;
+  font-family: var(--font-main);
+  color: var(--text-main);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 105px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 20px 0;
+  letter-spacing: 0.05em;
+  line-height: 100%;
+  z-index: 5;
+}

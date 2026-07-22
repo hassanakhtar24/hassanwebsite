@@ -1,0 +1,9 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/counter.css";
+
+@import "./variables.css";
+@import "./globals.css";
+@import "./overrides.css";

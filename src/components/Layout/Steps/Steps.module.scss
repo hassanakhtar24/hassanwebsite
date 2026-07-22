@@ -1,0 +1,95 @@
+.stepsSection {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.stepsContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.stepBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  @media (max-width: 880px) {
+    gap: 15px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  .stepNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 55px;
+    font-size: 175px;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1;
+    font-family: var(--font-main);
+
+    @media (max-width: 991px) {
+      min-width: 104px;
+    }
+
+    @media (max-width: 880px) {
+      min-width: 54px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 90px;
+    }
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  h3 {
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-alt);
+    margin: 0;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: var(--font-alt);
+    line-height: 2;
+    color: var(--text-alt);
+    margin: 0;
+    max-width: 275px;
+    line-height: 2;
+    letter-spacing: normal;
+    font-weight: 600;
+    backface-visibility: hidden;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+}

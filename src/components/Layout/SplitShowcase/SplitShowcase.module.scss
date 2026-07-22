@@ -1,0 +1,196 @@
+.splitSection {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 6;
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+  }
+
+  &:hover {
+    .prevArrow,
+    .nextArrow,
+    .disabled {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .sliderButtonWrapper {
+      padding: 0 40px;
+
+      @media (max-width: 880px) {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  @media (max-width: 880px) {
+    flex-direction: column;
+  }
+}
+
+.leftSide,
+.rightSide {
+  position: relative;
+  width: 50%;
+
+  @media (max-width: 880px) {
+    width: 100%;
+  }
+}
+
+.sliderContainer {
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+
+  width: 100%;
+}
+
+.slideItem {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  cursor: grab;
+}
+
+.sliderImageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.sliderButtonWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 6;
+
+  transition: padding 0.3s ease;
+}
+
+.prevArrow,
+.nextArrow {
+  background: var(--bg-inverse);
+  color: var(--text-inverse);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rightSide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-main);
+}
+
+.rightContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 550px;
+  padding: 0 200px;
+
+  @media (max-width: 1400px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 880px) {
+    padding: 0 15px;
+  }
+}
+
+.featureItem {
+  position: relative;
+  width: 100%;
+  .featureHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    .featureName {
+      position: relative;
+      height: 21px;
+      line-height: 21px;
+      font-family: var(--font-main);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-alt);
+      padding: 0;
+      letter-spacing: 0.05em;
+    }
+    .featurePercentage {
+      position: relative;
+      line-height: 1;
+      font-family: var(--font-alt);
+      color: var(--text-alt);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .animatedLine {
+    height: 1px;
+    background-color: var(--ui-disabled);
+    width: 0;
+    max-width: 100%;
+    display: block;
+
+    &.active {
+      animation: growLine 3s ease-out forwards;
+    }
+  }
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}

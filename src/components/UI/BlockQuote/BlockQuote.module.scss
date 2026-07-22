@@ -1,0 +1,29 @@
+.quoteContainer {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.quote {
+  border-left: 6px solid var(--text-main);
+
+  p {
+    margin: 0 0 0 50px;
+    font-size: 45px;
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 995px) {
+      font-size: 35px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0 0 20px;
+      font-size: 25px;
+    }
+  }
+}

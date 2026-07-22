@@ -1,0 +1,95 @@
+.sliderContainer {
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+
+  width: 100%;
+}
+
+.slideItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  cursor: grab;
+}
+
+.sliderImageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  overflow: hidden;
+
+  &:hover .hoverOverlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.sliderImage {
+  width: 100%;
+  object-fit: cover;
+
+  height: 67vh;
+}
+
+.descriptionButton {
+  font-family: var(--font-main);
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: var(--text-alt);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px 20px;
+  background: var(--bg-main);
+  border-radius: 0 20px 0 20px;
+  z-index: 5;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.sliderButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.prevArrow,
+.nextArrow {
+  background: var(--bg-inverse);
+  color: var(--text-inverse);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.disabled {
+  background: var(--ui-disabled);
+  color: #fff;
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}

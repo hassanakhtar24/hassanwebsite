@@ -1,0 +1,36 @@
+.toTopArrow {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--bg-main);
+  background: var(--bg-inverse);
+  border-radius: 50%;
+
+  z-index: 99;
+  right: 80px;
+  bottom: -80px;
+  opacity: 0;
+  transition:
+    opacity 0.4s ease-out,
+    bottom 0.4s ease-out,
+    right 0.4s ease-out;
+
+  @media (max-width: 880px) {
+    right: 15px;
+  }
+}
+
+.show {
+  bottom: 80px;
+  opacity: 1;
+
+  @media (max-width: 880px) {
+    bottom: 15px;
+  }
+}

@@ -1,0 +1,110 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+
+  width: 100%;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  transition:
+    background-color 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.navbarScrolled {
+  background-color: #111;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+.navbarContainer {
+  z-index: 5;
+  padding: 46px 50px 22px 50px;
+  min-width: 100%;
+  margin: 0;
+
+  transition: padding 0.6s ease;
+
+  @media (max-width: 991px) {
+    padding: 50px 50px 25px 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.navbarContainerScrolled {
+  padding: 20px 50px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.navbarImage {
+  margin: 0;
+  padding: 0;
+}
+
+.mobileButton {
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+
+  svg {
+    transition: color 0.3s ease;
+  }
+}
+
+.linkText {
+  font-family: "Oswald", sans-serif;
+  padding: 12px 15px !important;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: color 0.6s ease;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:active {
+    color: #fff !important;
+  }
+}
+
+.linkTextScrolled {
+  color: #fff !important;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:active {
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .overlay {
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 50vh;
+    background-color: #111;
+
+    div:first-child {
+      padding: 16px 0;
+    }
+  }
+}
